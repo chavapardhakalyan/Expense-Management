@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+    height: 100vh;
+    width: 100%;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.auth-form {
+    align-self: center;
+    color: #6c757d; /* Muted text color */
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #ffffff; /* White background */
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #343a40; /* Dark gray title text */
+}
+
+.auth-form .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.auth-form input:not([type="submit"]) {
+    width: 100%;
+    border: 1px solid #ced4da; /* Light gray border */
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    background: transparent;
+    transition: 0.15s;
+    color: #495057; /* Slightly darker text for inputs */
+}
+
+.auth-form input:not([type="submit"]):focus {
+    border-color: #4da6ff; /* Light blue border on focus */
+    box-shadow: 0 0 4px #4da6ff; /* Light blue glow effect on focus */
+    outline: none;
+}
+
+.auth-form label {
+    font-size: 14px;
+    color: #495057; /* Slightly darker text */
+}
+
+.auth-form .msg {
+    font-size: 13px;
+    text-align: center;
+    color: #dc3545; /* Red for error messages */
+}
+
+.auth-form small {
+    color: #dc3545; /* Red text */
+}
+
+.auth-form p {
+    color: #dc3545; /* Red text */
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fdecea; /* Light red background for error messages */
+}
+
+.auth-form a {
+    color: #007bff; /* Primary blue for links */
+    text-decoration: none;
+}
+
+.auth-form a:hover {
+    text-decoration: underline;
+}
+
+.auth-form .input-box:last-of-type {
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+.auth-form button {
+    background-color: #f98128; /* Orange button */
+    color: #fff; /* White text */
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 40px; /* Rounded button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.auth-form button:hover {
+    background-color: #ffad66; /* Light orange on hover */
+}
+
+@media all and (max-width: 900px) {
+    .container {
+        padding: 0 5%;
+        justify-content: center;
+    }
+}
